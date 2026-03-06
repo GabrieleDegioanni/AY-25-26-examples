@@ -1,0 +1,12 @@
+<project name="SOLID - examples - UML class diagrams">
+  <skin>
+    <groupId>org.apache.maven.skins</groupId>
+    <artifactId>maven-fluido-skin</artifactId>
+    <version>1.7</version>
+  </skin>
+  <body>
+    <menu name="Project Reports">
+      <item name="UML Diagrams" href="uml-diagrams.html"/>
+    </menu>
+  </body>
+</project>
