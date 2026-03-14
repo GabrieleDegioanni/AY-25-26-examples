@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <mkdir dir="C:\Users\gabri\OneDrive\Documentos\POLITO\Magistrale\Software Design and Architecture\AY-25-26-examples\Design_Principles/src/site" />
+    <echo file="C:\Users\gabri\OneDrive\Documentos\POLITO\Magistrale\Software Design and Architecture\AY-25-26-examples\Design_Principles/src/site/site.xml">&lt;project name="SOLID - examples - UML class diagrams">
+  &lt;skin>
+    &lt;groupId>org.apache.maven.skins&lt;/groupId>
+    &lt;artifactId>maven-fluido-skin&lt;/artifactId>
+    &lt;version>1.7&lt;/version>
+  &lt;/skin>
+  &lt;body>
+    &lt;menu name="Project Reports">
+      &lt;item name="UML Diagrams" href="uml-diagrams.html"/>
+    &lt;/menu>
+  &lt;/body>
+&lt;/project></echo>
+  </target>
+</project>

@@ -1,0 +1,48 @@
+@startuml
+
+class solid.srp.SRP_refactor1.AdmissionChecker {
+	{method}  {static} +VerifyAdmissionCriteria ( paramStudentData1 : solid.srp.SRP_refactor1.StudentData , paramdouble2 : double ) : boolean
+}
+
+
+class solid.srp.SRP_refactor1.CourseRef1 {
+	{field} -code : String
+	{field} -credits : int
+	{field} -name : String
+}
+
+
+class solid.srp.SRP_refactor1.GradeInserter {
+	{method}  {static} +insertGrade ( paramStudentData1 : solid.srp.SRP_refactor1.StudentData , paramCourseRef12 : solid.srp.SRP_refactor1.CourseRef1 , paramint3 : int ) : void
+}
+
+
+class solid.srp.SRP_refactor1.StudentData {
+	{field} -gpa : double
+	{field} -grades : java.util.Map
+	{field} -id : int
+	{field} -name : String
+	{field} ~specialProgramAdmission : boolean
+	{field} -surname : String
+	{field} -taxDue : double
+	{method} #getAdmissionStatus () : boolean
+	{method} #getSubjectsGrades () : java.util.Map
+	{method} +getTaxesDue () : double
+	{method} #insertGrade ( paramString1 : String , paramint2 : int ) : void
+	{method} +print () : String
+	{method} #setAdmissionStatus ( paramboolean1 : boolean ) : void
+	{method} #setTaxesDue ( paramdouble1 : double ) : void
+}
+
+
+class solid.srp.SRP_refactor1.TaxCalculator {
+	{field} {static} -due : double
+	{method}  {static} +calculateTax ( paramStudentData1 : solid.srp.SRP_refactor1.StudentData , paramdouble2 : double , paramdouble3 : double ) : void
+}
+
+
+
+
+
+
+@enduml
